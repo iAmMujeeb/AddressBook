@@ -10,6 +10,7 @@ public class AddressBookMain {
         System.out.println("Enter Your Options:");
         System.out.println("1.Add a Contact");
         System.out.println("2.Edit a Contact");
+        System.out.println("3.Delete a Contact");
         Scanner scanner = new Scanner(System.in);
         int options = scanner.nextInt();
         switch (options){
@@ -28,6 +29,9 @@ public class AddressBookMain {
                 System.out.println("8.Email Id");
                 int temp = scanner.nextInt();
                 addressBook1.editPerson(temp);
+            case 3:
+                addressBook1.deletePerson();
+                break;
             default:
                 System.out.println("Wrong Number");
         }
