@@ -86,4 +86,16 @@ public class AddressBook {
         return temp1;
     }
 
+    public void deletePerson() {
+        contact.setCity("");
+        contact.setLastName("");
+        contact.setAddress("");
+        contact.setCity("");
+        contact.setState("");
+        contact.setZip(0);
+        contact.setPhN(0);
+        contact.setEmailId("");
+        System.out.println(contact);
+    }
+
 }
